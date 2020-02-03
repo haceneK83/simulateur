@@ -1,1 +1,155 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+
+
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "Renault Life Web Regular";
+    src: url('assets/fonts/01_Latin/Regular/RenaultLifeWeb-Regular.eot') format("embedded-opentype"), url('assets/fonts/01_Latin/Regular/RenaultLifeWeb-Regular.woff') format("woff");
+  }
+  
+  @font-face {
+    font-family: "Renault Life Web Bold";
+    src: url('assets/fonts/01_Latin/Bold/RenaultLifeWeb-Bold.eot') format("embedded-opentype"), url('assets/fonts/01_Latin/Bold/RenaultLifeWeb-Bold.woff') format("woff");
+  }
+  
+  @font-face {
+    font-family: "Renault Life Web Bold Italic";
+    src: url('assets/fonts/01_Latin/BoldItalic/RenaultLifeWeb-BoldItalic.eot') format("embedded-opentype"), url('assets/fonts/01_Latin/BoldItalic/RenaultLifeWeb-BoldItalic.woff') format("woff");
+  }
+  
+  @font-face {
+    font-family: "Renault Life Web Italic";
+    src: url('assets/fonts/01_Latin/Italic/RenaultLifeWeb-Italic.eot') format("embedded-opentype"), url('assets/fonts/01_Latin/Italic/RenaultLifeWeb-Italic.woff') format("woff");
+  }
+  
+  @font-face {
+    font-family: "Renault Life Web Light";
+    src: url('assets/fonts/01_Latin/Light/RenaultLifeWeb-Light.eot') format("embedded-opentype"), url('assets/fonts/01_Latin/Light/RenaultLifeWeb-Light.woff') format("woff");
+  }
+  
+  @font-face {
+    font-family: "Renault Life Web LightItalic";
+    src: url('assets/fonts/01_Latin/LightItalic/RenaultLifeWeb-LightItalic.eot') format("embedded-opentype"), url('assets/fonts/01_Latin/LightItalic/RenaultLifeWeb-LightItalic.woff') format("woff");
+  }
+  
+  @font-face {
+    font-family: "Renault Life Web Regular";
+    src: url('assets/fonts/01_Latin/Regular/RenaultLifeWeb-Regular.eot') format("embedded-opentype"), url('assets/fonts/01_Latin/Regular/RenaultLifeWeb-Regular.woff') format("woff");
+  }
+  
+  @font-face {
+    font-family: "Renault Life Cy Web Bold";
+    /*font-style: normal;
+      font-weight: normal;*/
+    src: url('assets/fonts/02_Cyrillic/Bold/RenaultLifeCyWebWeb-Bold.eot') format("embedded-opentype"), url('assets/fonts/02_Cyrillic/Bold/RenaultLifeCyWebWeb-Bold.woff') format("woff");
+  }
+  
+  @font-face {
+    font-family: "Renault Life Cy Web Bold Italic";
+    src: url('assets/fonts/02_Cyrillic/BoldItalic/RenaultLifeCyWebWeb-BoldItalic.eot') format("embedded-opentype"), url('assets/fonts/02_Cyrillic/BoldItalic/RenaultLifeCyWebWeb-BoldItalic.woff') format("woff");
+  }
+  
+  @font-face {
+    font-family: "Renault Life Cy Web Italic";
+    src: url('assets/fonts/02_Cyrillic/Italic/RenaultLifeCyWebWeb-Italic.eot') format("embedded-opentype"), url('assets/fonts/02_Cyrillic/Italic/RenaultLifeCyWebWeb-Italic.woff') format("woff");
+  }
+  
+  @font-face {
+    font-family: "Renault Life Cy Web Light";
+    src: url('assets/fonts/02_Cyrillic/Light/RenaultLifeCyWebWeb-Light.eot') format("embedded-opentype"), url('assets/fonts/02_Cyrillic/Light/RenaultLifeCyWebWeb-Light.woff') format("woff");
+  }
+  
+  @font-face {
+    font-family: "Renault Life Cy Web LightItalic";
+    src: url('assets/fonts/02_Cyrillic/LightItalic/RenaultLifeCyWebWeb-LightItalic.eot') format("embedded-opentype"), url('assets/fonts/02_Cyrillic/LightItalic/RenaultLifeCyWebWeb-LightItalic.woff') format("woff");
+  }
+  
+  @font-face {
+    font-family: "Renault Life Cy Web Regular";
+    src: url('assets/fonts/02_Cyrillic/Regular/RenaultLifeCyWebWeb-Regular.eot') format("embedded-opentype"), url('assets/fonts/02_Cyrillic/Regular/RenaultLifeCyWebWeb-Regular.woff') format("woff");
+  }
+  
+  @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+  
+  body {
+    font-family: "Renault Life Web Regular" !important;
+    position: relative;
+    font-size: 1em;
+  }
+  
+  .mat-option {
+    font-family:"Renault Life Web Regular";
+    font-size: 16px;
+  }
+  
+  .mat-form-field {
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1.125;
+    font-family: "Renault Life Web Regular";
+  }
+  
+  .mat-card {
+    font-family: "Renault Life Web Regular";
+  }
+
+.mat-stepper-horizontal, .mat-stepper-vertical {
+    font-family: "Renault Life Web Regular";
+}
+
+
+.mat-select {
+	font-family: "Renault Life Web Regular";
+}
+.mat-stepper-horizontal, .mat-stepper-vertical {
+    background-color: #212529;
+}
+
+.mat-card {
+    background: #212529;
+    color: #fff;
+}
+
+ .CustomSelect__select {
+    font-size: inherit;
+    color: #ffce33;
+    background: transparent;
+    font-weight: 700;
+    border: 0;
+    border-bottom: 2px solid #ffce33;
+    padding: 8px 20px 0 0;
+}
+
+
+.FuelConsumption__dropdown {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.mat-progress-bar-buffer {
+    background-color: #27b027;
+}
+
+@media screen and (max-width: 600px) {
+    .title_message {
+      visibility: hidden;
+      clear: both;
+      float: left;
+      margin: 10px auto 5px 20px;
+      width: 28%;
+      display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		background: #212529
+	}
+}
+
+.mat-progress-bar-fill::after {
+  background-color: #212529;
+}

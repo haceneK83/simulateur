@@ -1,0 +1,320 @@
+<h5 style="text-align: center; padding: 10px; background: white;" >{{ 'sm.titre' | translate }}</h5>
+<app-custom-stepper linear>
+    <cdk-step label="{{ 'sm.votre_vehicule' | translate }}" [stepControl]="firstFormGroup" >
+        <form [formGroup]="firstFormGroup" >
+                {{ 'sm.interesse_par' | translate }}  &nbsp;
+                <mat-form-field MatFormFieldAppearance="outline"> 
+                    <mat-select formControlName="carRequired" [(value)]="selectedCar" (selectionChange)="getVersions()">
+                        <mat-option *ngFor="let car of carsOptions" [value]="car">
+                        {{car.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field> &nbsp;
+                <mat-form-field>
+                    <mat-select formControlName="versionRequired" [(value)]="selectedVersion" (selectionChange)="getEngines()">
+                        <mat-option *ngFor="let version of carVersions" [value]="version">
+                        {{version.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>&nbsp;<br>
+                {{ 'sm.equipe_dun_moteur' | translate }}  &nbsp;
+                <mat-form-field>
+                    <mat-select formControlName="engineRequired" [(value)]="selectedEngine" (selectionChange)="selectEngine()">
+                        <mat-option *ngFor="let eng of versionEngines" [value]="eng">
+                        {{eng.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-grid-list [hidden]="!displayInfoCar"  cols="1" style="background-color: transparent; color: white;" rowHeight="250px">
+                    <mat-grid-tile >
+                        <figure style="margin-top: 25px; text-align: center;">
+                            <img  style="height: 120px;" [src]="selectedCarUrlmg">
+                            <figcaption style="font-size: 0.8em;" > {{selectedCarName}} &nbsp; {{ selectedVerisionName}}</figcaption>
+                            <figcaption style="font-size: 0.8em;" > {{seletedEngineName}}</figcaption>
+                        </figure>
+                    </mat-grid-tile>
+                </mat-grid-list>
+                <mat-card-actions >
+                    <button mat-raised-button color="accent" cdkStepperNext>{{ 'sm.suivant' | translate }}</button>
+                </mat-card-actions>
+        </form>
+        <br>
+    </cdk-step>
+    <cdk-step label="{{ 'sm.vos_trajets_votre_conduite' | translate }}" [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup" >
+            {{ 'sm.Jeffectue_en_moyenne' | translate }} &nbsp;
+            <mat-form-field style="width: 60px;">
+                <input formControlName="kmRequired" type="number" matInput>
+            </mat-form-field>
+            {{ 'sm.km' | translate }} {{ 'sm.par_jour_que_je_parcours_en' | translate }} &nbsp;
+            <mat-form-field style="width: 60px;">
+                <input formControlName="trjRequired" type="number" matInput>
+            </mat-form-field>
+            {{ 'sm.trajets' | translate }} .
+            <mat-card-actions>
+                <button mat-raised-button color="accent" cdkStepperPrevious>{{ 'sm.precedent' | translate }}</button>
+                <button mat-raised-button color="accent" cdkStepperNext>{{ 'sm.suivant' | translate }}</button>
+            </mat-card-actions>
+        </form>
+    </cdk-step>
+    <cdk-step label="{{ 'sm.vos_trajets_votre_conduite' | translate }}" [stepControl]="thirdFormGroup">
+        <form [formGroup]="thirdFormGroup" >   
+            {{ 'sm.ces_trajets_representent' | translate }} &nbsp;
+            <mat-form-field style="width: 60px;">
+                <mat-select  formControlName="villeRequired"  [(value)]="selectedPourcentageVille" (selectionChange)="CalculePourCentage()">
+                    <mat-option *ngFor="let poucent of pourcentageOptions" [value]="poucent">
+                    {{poucent.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            &nbsp;% {{ 'sm.en_ville' | translate }}, &nbsp;
+            <mat-form-field style="width: 60px;">
+                <mat-select  formControlName="routeRequired"  [(value)]="selectedPourcentageRoute" (selectionChange)="CalculePourCentage()">
+                    <mat-option *ngFor="let poucent of pourcentageOptions" [value]="poucent">
+                    {{poucent.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            &nbsp;% {{ 'sm.sur_route_et' | translate }}  &nbsp;
+            <mat-form-field style="width: 60px;">
+                <mat-select  formControlName="autoRouteRequired" [(value)]="selectedPourcentageAutoRoute" (selectionChange)="CalculePourCentage()">
+                    <mat-option *ngFor="let poucent of pourcentageOptions" [value]="poucent">
+                    {{poucent.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            &nbsp;% {{ 'sm.sur_autoroute' | translate }}.
+            <div  *ngIf="disablePoucentageStep" style="text-align: center; color: red;">{{ 'sm.la_somme_des_pourcentage_doit_etre_egale_100' | translate }}</div>
+            <mat-card-actions>
+                <button mat-raised-button color="accent" cdkStepperPrevious>{{ 'sm.precedent' | translate }}</button>
+                <button mat-raised-button color="accent" [disabled]="disablePoucentageStep" cdkStepperNext>{{ 'sm.suivant' | translate }}</button>
+            </mat-card-actions>
+        </form>
+    </cdk-step>
+
+    <cdk-step label="Vos trajets & votre conduite" [stepControl]="fourthFormGroup">
+        <form [formGroup]="fourthFormGroup" >
+            {{ 'sm.ma_conduite_est' | translate }} &nbsp;
+            <mat-form-field >
+                <mat-select  formControlName="conduiteRequired" [(value)]="selectedConduite">
+                    <mat-option *ngFor="let conduite of conduiteOptions" [value]="conduite">
+                    {{conduite.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-card-actions>
+                <button mat-raised-button color="accent" cdkStepperPrevious>{{ 'sm.precedent' | translate }}</button>
+                <button mat-raised-button color="accent" cdkStepperNext>{{ 'sm.suivant' | translate }}</button>
+            </mat-card-actions>
+        </form>
+    </cdk-step>
+    <cdk-step label="Vos trajets & votre conduite" [stepControl]="fifthFormGroup">
+        <form [formGroup]="fifthFormGroup" >   
+            {{ 'sm.Je_utilise' | translate }} &nbsp;
+            <mat-form-field >
+                <mat-select formControlName="ecoModeRequired" [(value)]="selectedFrequenceEco">
+                    <mat-option *ngFor="let frequence of frequenceOptions" [value]="frequence">
+                    {{frequence.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field> 
+            &nbsp; {{ 'sm.eco_mode' | translate }}
+            <mat-card-actions>
+                <button mat-raised-button color="accent" cdkStepperPrevious>{{ 'sm.precedent' | translate }}</button>
+                <button mat-raised-button color="accent" cdkStepperNext>{{ 'sm.suivant' | translate }}</button>
+            </mat-card-actions>
+        </form> 
+    </cdk-step>
+    <cdk-step label="Vos trajets & votre conduite" [stepControl]="sixthFormGroup">
+        <form [formGroup]="sixthFormGroup" >
+            {{ 'sm.pour_finir_je_transport' | translate }} &nbsp;
+            <mat-form-field >
+                <mat-select formControlName="bagageRequired" [(value)]="selectedBagage">
+                    <mat-option *ngFor="let frequence of frequenceOptions" [value]="frequence">
+                    {{frequence.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field> &nbsp;
+            {{ 'sm.des_bagages_supérieurs_a_30_KG_et' | translate }} &nbsp;
+            <mat-form-field >
+                <mat-select formControlName="passagerRequired" [(value)]="selectedPassager">
+                    <mat-option *ngFor="let frequence of frequenceOptions" [value]="frequence">
+                    {{frequence.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field> &nbsp; {{ 'sm.des_passagers' | translate }}.
+            <mat-card-actions>
+                <button mat-raised-button color="accent" cdkStepperPrevious>{{ 'sm.precedent' | translate }}</button>
+                <button mat-raised-button color="accent" cdkStepperNext>{{ 'sm.valider' | translate }} </button>
+            </mat-card-actions>
+        </form>
+    </cdk-step>
+    <cdk-step >
+        <div style="text-align: center;">
+            {{ 'sm.votre_consommation_a_bord_de' | translate }} <b> {{ selectedCarName }} {{ selectedVerisionName }} </b>{{ 'sm.equipe_dun_moteur' | translate }} &nbsp;
+            <mat-form-field>
+                <mat-select  [(value)]="selectedEngine" >
+                    <mat-option *ngFor="let eng of versionEngines" [value]="eng">
+                    {{eng.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>&nbsp; {{ 'sm.est_estime_a' | translate }} :
+        </div>
+
+        <mat-card class="example-card">
+            <mat-card-content>
+                <div class="FuelConsumption__resultValue">
+                    <div class="FuelConsumption__estimatedResult">
+                        <span class="FuelConsumption__estimatedResultValue">5,93</span>
+                        <span class="FuelConsumption__estimatedResultUnit">l/100km</span>
+                    </div>
+                    <div class="FuelConsumption__theoreticResult">
+                        <span>{{ 'sm.consommation_theorique' | translate }}</span><span> &nbsp;4,58 </span>
+                        <span>l/100km</span>
+                    </div>
+                    
+
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <div class="engine_title" >{{ 'sm.renault_vous_propose' | translate }} 2 {{ 'sm.moteurs_alternatifs' | translate }}</div>
+        <div class="scrolling-wrapper">
+            <div class="card" matBadge="1" size="medium" matBadgePosition="before" matBadgeColor="accent" > 
+                <br>
+                <div style=" text-align: center; color:  yellowgreen; margin-bottom: 20px;">E-TECH Plug-in 120 </div>
+                <div style="font-size: 0.8em; text-align: center; ">
+                    <span>5,4 &nbsp; l/100km</span>
+                </div>
+                <div style="font-size: 0.5em; text-align: center;  margin-bottom: 30px; ">
+                    <span style="color: #777f91">{{ 'sm.consommation_theorique' | translate }} &nbsp;4,58 &nbsp; </span>
+                    <span style="color: #777f91">l/100km</span>
+                </div>
+                <div style="font-size: 0.6em; text-align: center; ">
+                    <button class="nav-button" cdkStepperNext >{{ 'sm.comparer_avec_ce_moteur' | translate }}</button>
+                </div>
+            </div>
+            
+            <div class="card" matBadge="2" size="medium" matBadgePosition="before" matBadgeColor="accent" > 
+                <br>
+                <div style=" text-align: center; color:  yellowgreen; margin-bottom: 20px;">E-TECH Plug-in 90 </div>
+                <div style="font-size: 0.8em; text-align: center; ">
+                    <span>6,6 &nbsp; l/100km</span>
+                </div>
+                <div style="font-size: 0.5em; text-align: center;  margin-bottom: 30px; ">
+                    <span style="color: #777f91">{{ 'sm.consommation_theorique' | translate }}  &nbsp;4,58 &nbsp; </span>
+                    <span style="color: #777f91">l/100km</span>
+                </div>
+                <div style="font-size: 0.6em; text-align: center; ">
+                    <button class="nav-button" cdkStepperNext >{{ 'sm.comparer_avec_ce_moteur' | translate }}</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        </cdk-step>
+           
+        <cdk-step>
+            <button class='btn btn-sm btn-info' cdkStepperPrevious>{{ 'sm.retour' | translate }}</button><br> <br>
+            <mat-grid-list cols="2" rowHeight="200px" rowHeight="1rem">
+                <mat-grid-tile style="background: transparent; color: white; text-align: center; font-size: 0.5em;" [rowspan]="8">
+                    <figure>
+                        <img style="height: 120px;" src="assets/images/clio.png">
+                        <figcaption > <b>Clio</b><br> Version</figcaption>
+                        <br>
+                    </figure>
+                </mat-grid-tile>
+                <mat-grid-tile style="background: transparent; color: white; text-align: center; font-size: 0.5em;" [rowspan]="8">
+                    <figure>
+                        <img style="height: 120px;" src="assets/images/clio.png">
+                        <figcaption > <b>Clio</b><br>Version</figcaption>
+                        <br>
+                    </figure>
+                </mat-grid-tile>
+                <mat-grid-tile  style="background: white; color: black; font-size: 0.5em;" [rowspan]="2">
+                    TCE 130 BVM 
+                </mat-grid-tile>
+                <mat-grid-tile  style="background: white; color: black; font-size: 0.5em;" [rowspan]="2"> 
+                    E-TECH Plug-in 160 
+                </mat-grid-tile>
+                <mat-grid-tile  style="background: white; color: black; font-size: 0.5em;" [rowspan]="4">
+                    <b style="font-size: 1.5em;">6,4</b> &nbsp; l/100km
+                </mat-grid-tile>
+                <mat-grid-tile  style="background: white; color: black; font-size: 0.5em;" [rowspan]="4"> 
+                    <b style="font-size: 1.5em;">0,2</b> &nbsp; l/100km
+                </mat-grid-tile>
+
+                <mat-grid-tile [colspan]="2" style="background: rgb(229, 231, 91); color: black; font-size: 0.5em;" [rowspan]="2"> 
+                    <b  style="font-size: 1.2em;">{{ 'sm.votre_financement' | translate }}</b>
+                </mat-grid-tile>
+                <mat-grid-tile  style="background: rgb(229, 231, 91); color: black; font-size: 0.6em;" [rowspan]="6">
+                    <figure style="margin-top: 25px; text-align: center;">
+                        <b>{{ 'sm.a_partir_de' | translate }}</b> <br>
+                        <figcaption style="font-size: 1.2em;"> <b>298 &euro;  </b> /{{ 'sm.mois' | translate }}</figcaption>
+                        <figcaption style="font-size: 0.6em;"> New Deal - LOA 48 {{ 'sm.mois' | translate }}</figcaption>
+                        <figcaption style="font-size: 0.6em;"> 60 000km</figcaption>
+                        <br>
+                    </figure>
+                </mat-grid-tile>
+                <mat-grid-tile  style="background: rgb(229, 231, 91); color: black; font-size: 0.6em;" [rowspan]="6">
+                    <figure style="margin-top: 25px; text-align: center;">
+                        <b>{{ 'sm.a_partir_de' | translate }}</b> <br>
+                        <figcaption style="font-size: 1.2em;"> <b>298 &euro;  </b> /{{ 'sm.mois' | translate }}</figcaption>
+                        <figcaption style="font-size: 0.6em;"> New Deal - LOA 48 {{ 'sm.mois' | translate }}</figcaption>
+                        <figcaption style="font-size: 0.6em;"> 60 000km</figcaption>
+                        <br>
+                    </figure>
+                </mat-grid-tile>
+                <mat-grid-tile  style="background: white; color: black;" [rowspan]="16"> 
+                    <figure style="margin-top: 25px; text-align: center;">
+                        <figcaption> - </figcaption>
+                        <figcaption style="font-size: 0.6em; padding: 5px;"> {{ 'sm.vos_economies_de_carburant_jusqua' | translate }}</figcaption>
+                        <figcaption style="font-size: 0.7em;"> <b>80 &euro;  </b> /{{ 'sm.mois' | translate }}</figcaption>
+                        <figcaption > + </figcaption>
+                        <figcaption style="font-size: 0.6em; padding: 5px;"> {{ 'sm.cout_de_la_recharge_electrique_jusqua' | translate }}</figcaption>
+                        <figcaption style="font-size: 0.7em;"> <b>8 &euro;  </b> /{{ 'sm.mois' | translate }}</figcaption>
+                        <figcaption > = </figcaption>
+                    </figure>
+                </mat-grid-tile>
+                <mat-grid-tile  style="background: white; color: black;" [rowspan]="16"> 
+                    <figure style="margin-top: 25px; text-align: center;">
+                        <figcaption> - </figcaption>
+                        <figcaption style="font-size: 0.6em; padding: 5px;">{{ 'sm.vos_economies_de_carburant_jusqua' | translate }}</figcaption>
+                        <figcaption style="font-size: 0.7em;" > <b>80 &euro;  </b> /{{ 'sm.mois' | translate }}</figcaption>
+                        <figcaption > + </figcaption>
+                        <figcaption style="font-size: 0.6em; padding: 5px;"> {{ 'sm.cout_de_la_recharge_electrique_jusqua' | translate }}</figcaption>
+                        <figcaption style="font-size: 0.7em;" > <b>8 &euro;  </b> /{{ 'sm.mois' | translate }}</figcaption>
+                        <figcaption > = </figcaption>
+                    </figure>
+                </mat-grid-tile>
+                <mat-grid-tile  style="background: white; color: black;" [rowspan]="5"> 
+                    <figure style="margin-top: 25px; text-align: center;">
+                        <figcaption style="font-size: 0.6em; padding: 5px;"> {{ 'sm.a_partir_de' | translate }} </figcaption>
+                        <figcaption style="font-size: 0.7em;" > <b>269 &euro;  </b> /{{ 'sm.mois' | translate }}</figcaption>
+                    </figure>
+                </mat-grid-tile>
+                <mat-grid-tile  style="background: white; color: black;" [rowspan]="5"> 
+                    <figure style="margin-top: 25px; text-align: center;">
+                        <figcaption style="font-size: 0.6em; padding: 5px;"> {{ 'sm.a_partir_de' | translate }} </figcaption>
+                        <figcaption style="font-size: 0.7em;" > <b>269 &euro; </b> /{{ 'sm.mois' | translate }}</figcaption>
+                    </figure>
+                </mat-grid-tile>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-grid-tile style="background: transparent; color: white; text-align: center; font-size: 0.5em;" [rowspan]="3">
+                        <mat-radio-button [value]="engine"></mat-radio-button>
+                    </mat-grid-tile>
+                    <mat-grid-tile style="background: transparent; color: white; text-align: center; font-size: 0.5em;" [rowspan]="3">
+                            <mat-radio-button value="2"></mat-radio-button>
+                    </mat-grid-tile>
+                    <br>
+                </mat-radio-group>
+                <mat-grid-tile style="background: transparent; color: white; text-align: center; font-size: 0.7em;" [colspan]="2" [rowspan]="2">
+                    <a href="#" style="color: white; ">{{ 'sm.personnaliser_la_simulation_financiere' | translate }}</a>
+                </mat-grid-tile>
+                <br> <br>
+                <mat-grid-tile style="background: transparent; color: white; text-align: center; font-size: 0.7em;" [colspan]="2" [rowspan]="4">
+                    <button mat-raised-button color="accent" >{{ 'sm.choisir' | translate }}</button>
+                </mat-grid-tile>
+            </mat-grid-list> 
+            <br>
+            <br>
+        </cdk-step>
+</app-custom-stepper>

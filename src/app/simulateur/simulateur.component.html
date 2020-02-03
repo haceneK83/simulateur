@@ -1,0 +1,60 @@
+
+<style>
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+    height: 100% !important;
+}
+</style>
+<div  class="container" >
+    <div style="text-align: center; padding: 12px;">Calculer vôtre consommation réelle</div>
+    <mat-card style="height: 94%;" >
+      <mat-horizontal-stepper>
+        <mat-step > 
+			<ng-template matStepLabel>Vôtre véhicule</ng-template>
+
+			<div style="font-size: 2em;">Je suis intéressé(e) par &nbsp;<mat-form-field> 
+				<mat-select>
+				  <mat-option *ngFor="let food of foods" [value]="food.value">
+					{{food.viewValue}}
+				  </mat-option>
+				</mat-select>
+			  </mat-form-field>   équipé d'un moteur</div>
+			<div style="float: right; position: absolute; bottom: 20px; right: 20px;">
+				<button mat-button matStepperNext>Next</button>
+			</div>
+        </mat-step>
+        <mat-step >
+            <ng-template matStepLabel>Vos trajets & votre conduite</ng-template>
+			<div style="font-size: 2em;">
+				J'effectue en moyenne 
+              30
+               km par jour que je parcours en 
+              2
+               trajets.<br>
+               Ces trajets représentent % en ville, % sur route et % sur autoroute.
+               <br>
+               Ma conduite est .
+               <br>
+               J'utilise  l'Eco Mode.
+			</div>
+            <div style="float: left; position: absolute; bottom: 20px; left: 20px;">
+                <button mat-button matStepperPrevious>Back</button>
+            </div>
+            <div style="float: right; position: absolute; bottom: 20px; right: 20px;">
+              <button mat-button matStepperNext>Next</button>
+            </div>
+        </mat-step>
+        <mat-step>
+          	<ng-template matStepLabel>Done</ng-template>
+          		You are now done.
+
+			<div style="float: left; position: absolute; bottom: 20px; left: 20px;">
+				<button mat-button matStepperPrevious>Back</button>
+			</div>
+			<div style="float: right; position: absolute; bottom: 20px; right: 20px;">
+				<button mat-button>Reset</button>
+			</div>
+        </mat-step>
+      </mat-horizontal-stepper>
+  </mat-card>
+</div>

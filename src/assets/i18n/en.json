@@ -1,0 +1,57 @@
+{
+	"sm" :{
+		"titre": "Calculate your actual consumption",
+
+
+		"votre_vehicule" : "Your vehicle",
+		"interesse_par" : "I am interested in",
+		"equipe_dun_moteur": "fitted with an engine",
+
+
+		"vos_trajets_votre_conduite":"Your journeys & your driving",
+		"Jeffectue_en_moyenne": "I perform on average",
+		"km":"km",
+		"par_jour_que_je_parcours_en" : "per day that I travel in",
+		"trajets": "trips",
+
+
+		"ces_trajets_representent" : "These journeys represent",
+		"en_ville": "in the city",
+		"sur_route_et": "on the road and",
+		"sur_autoroute" :"on the road and",
+		"la_somme_des_pourcentage_doit_etre_egale_100":"the sum of the percentages must be equal to 100",
+
+
+		"ma_conduite_est": "Ma driving is",
+		"Je_utilise": "I use",
+		"eco_mode":"The Eco Mode",
+
+
+		"pour_finir_je_transport": "Finally, I never carry",
+		"des_bagages_supérieurs_a_30_KG_et" :"baggage over 30 kg, and",
+		"des_passagers":"des passengers",
+
+		
+		"votre_consommation_a_bord_de": "Your consumption on board",
+		"est_estime_a": "is estimated at",
+		"consommation_theorique": "Theoretical consumption",
+		"renault_vous_propose": "Renault offers you",
+		"moteurs_alternatifs": "Alternative engines",
+		"comparer_avec_ce_moteur": "COMPARE WITH THIS ENGINE",
+
+
+		"votre_financement":"Your funding",
+		"vos_economies_de_carburant_jusqua" : "Your fuel savings up to",
+		"cout_de_la_recharge_electrique_jusqua": "Cost of electric recharge up to",
+		"a_partir_de":"from",
+		"personnaliser_la_simulation_financiere":"Customize financial simulation",
+
+
+		"suivant":"Next",
+		"precedent":"Previous",
+		"retour" :"Back",
+		"mois" : "Month",
+		"Choisir": "Choose",
+		"valider": "Validate"
+	}
+}

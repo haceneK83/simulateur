@@ -1,0 +1,127 @@
+.step-content {
+    font-size: 1.5em;
+}
+
+
+.step-navigation-bar {
+    bottom : 10%;
+    height : 40px;
+    margin-top : 40px;
+}
+
+
+.nav-button {
+    background: #ffda66 ;
+    padding: 5px;
+    border: 0;
+    border-radius: 2px;
+}
+
+
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+ }
+
+ .FuelConsumption__estimatedResult {
+    margin-bottom: 16px;
+}
+
+
+
+.FuelConsumption__estimatedResultValue {
+    font-size: 8rem;
+    font-weight: 700;
+    display: block;
+}
+
+.FuelConsumption__estimatedResultUnit {
+    font-size: 1.8rem;
+    display: block;
+}
+
+.FuelConsumption__theoreticResult {
+    font-size: 1.2rem;
+    color: #777f91;
+}
+
+.FuelConsumption__resultValue{
+
+    flex-grow: 1;
+    margin: 64px auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    text-align: center;
+}
+
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    background: white;
+    padding: 15px;
+
+    border-radius:  0px 0px 10px 10px;
+}
+
+  
+
+   
+
+@media screen and (max-width: 600px) {
+    .scrolling-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE and Edge */
+    .scrolling-wrapper {
+        -ms-overflow-style: none;
+    }
+}
+
+.card {
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    background: #212529;
+    margin: 10px;
+}
+
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #2d333a; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:  #2d333a; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #38414b;
+}
+
+.engine_title {
+    color: black;
+    background: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.7em;
+    border-radius: 10px 10px 0px 0px;
+}

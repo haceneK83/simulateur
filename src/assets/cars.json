@@ -1,0 +1,72 @@
+[
+    {
+        "name" : "CLIO",
+        "code" : "X982VPVPCL4",
+        "imageURL":  "assets/images/clio.png",
+        "versions" : [
+            {
+                "name": "Version CLIO 1",
+                "code": "verCLIO1",
+                "engines": [
+                    {
+                        "name": "engine CLIO 1",
+                        "code": "enjCLIO1"
+                    },
+                    {
+                        "name": "engine CLIO 2",
+                        "code": "enjCLIO2"
+                    }
+                ]
+            },
+            {
+                "name": "Version CLIO 2",
+                "code": "verCLIO2",
+                "engines" : [
+                    {
+                        "name": "engine CLIO 2",
+                        "code": "enjCLIO1"
+                    },
+                    {
+                        "name": "engine CLIO 2",
+                        "code": "enjCLIO2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name" : "CAPTURE",
+        "code" : "X872MOVP87J",
+        "imageURL":  "assets/images/capture.jpg",
+        "versions" : [
+            {
+                "name": "Version CAPTURE 1",
+                "code": "verCAPTURE1",
+                "engines" : [
+                    {
+                        "name": "engine CAPTURE 1",
+                        "code": "enjCAPTURE1"
+                    },
+                    {
+                        "name": "engine CAPTURE 2",
+                        "code": "enjCAPTURE2"
+                    }
+                ]
+            },
+            {
+                "name": "Version CAPTURE 2",
+                "code": "verCAPTURE2",
+                "engines" : [
+                    {
+                        "name": "engine CAPTURE 2",
+                        "code": "enjCAPTURE1"
+                    },
+                    {
+                        "name": "engine CAPTURE 2",
+                        "code": "enjCAPTURE2"
+                    }
+                ]
+            }
+        ]
+    }
+]
