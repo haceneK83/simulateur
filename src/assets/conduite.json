@@ -1,22 +1,22 @@
 [
     {
-        "name": "Très dynamique",
+        "name": "sm.tres_dynamique",
         "value": "DRV_STYLE_V_DYNAMIC"
     },
     {
-        "name": "Dynamique",
+        "name": "sm.dynamique",
         "value": "DRV_STYLE_DYNAMIC"
     },
     {
-        "name": "Intermédiaire",
+        "name": "sm.intermediaire",
         "value": "DRV_STYLE_MEDIUM"
     },
     {
-        "name": "Souple",
+        "name": "sm.souple",
         "value": "DRV_STYLE_ECO"
     },
     {
-        "name": "Très souple",
+        "name": "sm.tres_souple",
         "value": "DRV_STYLE_V_ECO"
     }
 ]

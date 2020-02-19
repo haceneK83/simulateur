@@ -6,7 +6,7 @@
                 <mat-form-field MatFormFieldAppearance="outline"> 
                     <mat-select formControlName="carRequired" [(value)]="selectedCar" (selectionChange)="getVersions()">
                         <mat-option *ngFor="let car of carsOptions" [value]="car">
-                        {{car.name}}
+                        {{car.name | translate}}
                         </mat-option>
                     </mat-select>
                 </mat-form-field> &nbsp;
@@ -29,7 +29,7 @@
                     <mat-grid-tile >
                         <figure style="margin-top: 25px; text-align: center;">
                             <img  style="height: 120px;" [src]="selectedCarUrlmg">
-                            <figcaption style="font-size: 0.8em;" > {{selectedCarName}} &nbsp; {{ selectedVerisionName}}</figcaption>
+                            <figcaption style="font-size: 0.8em;" > {{selectedCarName | translate}} &nbsp; {{ selectedVerisionName}}</figcaption>
                             <figcaption style="font-size: 0.8em;" > {{seletedEngineName}}</figcaption>
                         </figure>
                     </mat-grid-tile>
@@ -98,7 +98,7 @@
             <mat-form-field >
                 <mat-select  formControlName="conduiteRequired" [(value)]="selectedConduite">
                     <mat-option *ngFor="let conduite of conduiteOptions" [value]="conduite">
-                    {{conduite.name}}
+                    {{ conduite.name | translate }}
                     </mat-option>
                 </mat-select>
             </mat-form-field>
@@ -114,7 +114,7 @@
             <mat-form-field >
                 <mat-select formControlName="ecoModeRequired" [(value)]="selectedFrequenceEco">
                     <mat-option *ngFor="let frequence of frequenceOptions" [value]="frequence">
-                    {{frequence.name}}
+                    {{frequence.name | translate}}
                     </mat-option>
                 </mat-select>
             </mat-form-field> 
@@ -127,19 +127,19 @@
     </cdk-step>
     <cdk-step label="Vos trajets & votre conduite" [stepControl]="sixthFormGroup">
         <form [formGroup]="sixthFormGroup" >
-            {{ 'sm.pour_finir_je_transport' | translate }} &nbsp;
+            {{ 'sm.pour_finir' | translate }} &nbsp; {{ 'sm.je' | translate }} <span *ngIf="langue == 'fr'">{{ 'sm.transport' | translate }}</span>  &nbsp;
             <mat-form-field >
                 <mat-select formControlName="bagageRequired" [(value)]="selectedBagage">
                     <mat-option *ngFor="let frequence of frequenceOptions" [value]="frequence">
-                    {{frequence.name}}
+                    {{frequence.name | translate}}
                     </mat-option>
                 </mat-select>
-            </mat-form-field> &nbsp;
+            </mat-form-field> &nbsp; <span *ngIf="langue == 'en'">{{ 'sm.transport' | translate }}  &nbsp; </span>
             {{ 'sm.des_bagages_supérieurs_a_30_KG_et' | translate }} &nbsp;
             <mat-form-field >
                 <mat-select formControlName="passagerRequired" [(value)]="selectedPassager">
                     <mat-option *ngFor="let frequence of frequenceOptions" [value]="frequence">
-                    {{frequence.name}}
+                    {{frequence.name | translate}}
                     </mat-option>
                 </mat-select>
             </mat-form-field> &nbsp; {{ 'sm.des_passagers' | translate }}.
@@ -165,15 +165,13 @@
             <mat-card-content>
                 <div class="FuelConsumption__resultValue">
                     <div class="FuelConsumption__estimatedResult">
-                        <span class="FuelConsumption__estimatedResultValue">5,93</span>
+                        <span class="FuelConsumption__estimatedResultValue">{{ selectedEngine.consomation }}</span>
                         <span class="FuelConsumption__estimatedResultUnit">l/100km</span>
                     </div>
                     <div class="FuelConsumption__theoreticResult">
                         <span>{{ 'sm.consommation_theorique' | translate }}</span><span> &nbsp;4,58 </span>
                         <span>l/100km</span>
                     </div>
-                    
-
                 </div>
             </mat-card-content>
         </mat-card>

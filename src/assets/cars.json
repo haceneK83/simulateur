@@ -1,42 +1,114 @@
 [
     {
-        "name" : "CLIO",
-        "code" : "X982VPVPCL4",
+        "name" : "sm.newclio",
+        "code" : "clio",
         "imageURL":  "assets/images/clio.png",
         "versions" : [
             {
-                "name": "Version CLIO 1",
-                "code": "verCLIO1",
+                "name": "Life",
+                "code": "life",
                 "engines": [
                     {
-                        "name": "engine CLIO 1",
-                        "code": "enjCLIO1"
+                        "name": "TCe 100 X-Tronic",
+                        "code": "TCe 100 X-Tronic",
+                        "consomation": "6,9",
+                        "alternatifs": [
+                            {   
+                                "name":"E-TECH Hybrid",
+                                "code":"E-TECH Hybrid",
+                                "consomation": "5,2"
+                            },
+                            {   
+                                "name":"TCe 130 EDC",
+                                "code":"TCe 130 EDC",
+                                "consomation": "6,3"
+                            }
+                        ]
                     },
                     {
-                        "name": "engine CLIO 2",
-                        "code": "enjCLIO2"
+                        "name": "TCe 100 BVM",
+                        "code": "TCe 100 BVM",
+                        "consomation": "6,3",
+                        "alternatifs": [
+                            {   
+                                "name":"TCe 100 GPL",
+                                "code":"TCe 100 GPL",
+                                "consomation": "6,51"
+                            },
+                            {   
+                                "name":"Blue dCi 85",
+                                "code":"Blue dCi 85",
+                                "consomation": "5,0"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Blue dCi 115",
+                        "code": "Blue dCi 115",
+                        "consomation": "5",
+                        "alternatifs": [
+                            {   
+                                "name":"E-TECH Hybrid",
+                                "code":"E-TECH Hybrid",
+                                "consomation": "5,2"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "TCe 130 EDC",
+                        "code": "TCe 130 EDC"
                     }
                 ]
             },
             {
-                "name": "Version CLIO 2",
-                "code": "verCLIO2",
-                "engines" : [
+                "name": "Zen",
+                "code": "zen",
+                "engines": [
                     {
-                        "name": "engine CLIO 2",
-                        "code": "enjCLIO1"
+                        "name": "TCe 100 X-Tronic",
+                        "code": "TCe 100 X-Tronic"
                     },
                     {
-                        "name": "engine CLIO 2",
-                        "code": "enjCLIO2"
+                        "name": "TCe 100 BVM",
+                        "code": "TCe 100 BVM"
+                    },
+                    {
+                        "name": "Blue dCi 115",
+                        "code": "Blue dCi 115"
+                    },
+                    {
+                        "name": "TCe 130 EDC",
+                        "code": "TCe 130 EDC"
+                    }
+                ]
+            },
+            {
+                "name": "Intens",
+                "code": "zen",
+                "engines": [
+                    {
+                        "name": "TCe 100 X-Tronic",
+                        "code": "TCe 100 X-Tronic"
+                    },
+                    {
+                        "name": "TCe 100 BVM",
+                        "code": "TCe 100 BVM"
+                    },
+                    {
+                        "name": "Blue dCi 115",
+                        "code": "Blue dCi 115"
+                    },
+                    {
+                        "name": "TCe 130 EDC",
+                        "code": "TCe 130 EDC"
                     }
                 ]
             }
         ]
     },
     {
-        "name" : "CAPTURE",
-        "code" : "X872MOVP87J",
+        "name" : "sm.newcapture",
+        "code" : "capture",
         "imageURL":  "assets/images/capture.jpg",
         "versions" : [
             {

@@ -1,18 +1,18 @@
 [
     {
-        "name": "Jamais",
+        "name": "sm.jamais",
         "value": "FRQ_EM_NEVER"
     },
     {
-        "name": "Rarement",
+        "name": "sm.rarement",
         "value": "FRQ_EM_RARELY"
     },
     {
-        "name": "Régulièrement",
+        "name": "sm.regulierement",
         "value": "FRQ_EM_REGULARLY"
     },
     {
-        "name": "Souvent",
+        "name": "sm.souvent",
         "value": "FRQ_EM_OFTEN"
     }
 ]

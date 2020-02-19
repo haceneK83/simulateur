@@ -27,7 +27,9 @@
 		"eco_mode":"l'Eco Mode",
 
 
-		"pour_finir_je_transport": "Pour finir, je transport",
+		"pour_finir":"Pour finir, ",
+		"je":"je",
+		"transport":"transporte",
 		"des_bagages_supérieurs_a_30_KG_et" :"des bagages supérieurs à 30 KG, et",
 		"des_passagers":"des passagers",
 
@@ -38,8 +40,7 @@
 		"renault_vous_propose": "Renault vous propose",
 		"moteurs_alternatifs": "Moteurs alternatifs",
 		"comparer_avec_ce_moteur": "COMPARER AVEC CE MOTEUR",
-		
-
+		 
 		"votre_financement":"Votre financement",
 		"vos_economies_de_carburant_jusqua" : "Vos économies de carburant jusqu'à",
 		"cout_de_la_recharge_electrique_jusqua": "Coût de la recharge éléctrique jusqu'à",
@@ -53,6 +54,20 @@
 		"retour" :"Retour",
 		"mois" : "mois",
 		"choisir": "Choisir",
-		"valider": "Valider"
+		"valider": "Valider",
+
+		"tres_dynamique": "Très dynamique",
+		"dynamique":"Dynamique",
+		"intermediaire":"intermediaire",
+		"souple":"souple",
+		"tres_souple": "Très souple",
+
+		"jamais":"Jamais",
+		"rarement": "Rarement",
+		"regulierement":"Régulièrement",
+		"souvent": "Souvent",
+
+		"newclio": "Nouvelle CLIO",
+		"newcapture": "Nouveau CAPTUR"
 	}
 }

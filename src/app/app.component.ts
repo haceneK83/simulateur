@@ -14,12 +14,18 @@ export class AppComponent {
   isLinear = false;
   newColorFr = false;
   newColorEn = false;
+
+  langue: string;
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('fr');
+    
+		//récupération de la langue
+	
   }
 
   ngOnInit() { 
     this.newColorFr = true;
+    this.langue = 'fr';
   }
 
   useLanguage(language: string) {
@@ -33,5 +39,7 @@ export class AppComponent {
       this.newColorFr = false,
       this.newColorEn = true;
     }
+
+    this.langue = this.translate.currentLang;
   }
 }

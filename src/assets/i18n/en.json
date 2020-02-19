@@ -2,7 +2,6 @@
 	"sm" :{
 		"titre": "Calculate your actual consumption",
 
-
 		"votre_vehicule" : "Your vehicle",
 		"interesse_par" : "I am interested in",
 		"equipe_dun_moteur": "fitted with an engine",
@@ -27,9 +26,11 @@
 		"eco_mode":"The Eco Mode",
 
 
-		"pour_finir_je_transport": "Finally, I never carry",
+		"pour_finir":"Finally, ",
+		"je":"I",
+		"transport":"carry",
 		"des_bagages_supérieurs_a_30_KG_et" :"baggage over 30 kg, and",
-		"des_passagers":"des passengers",
+		"des_passagers":"passengers",
 
 		
 		"votre_consommation_a_bord_de": "Your consumption on board",
@@ -52,6 +53,22 @@
 		"retour" :"Back",
 		"mois" : "Month",
 		"Choisir": "Choose",
-		"valider": "Validate"
+		"valider": "Validate",
+
+
+		"tres_dynamique": "Very dynamic",
+		"dynamique":"Dynamic",
+		"intermediaire":"Intermediate",
+		"souple":"Soft",
+		"tres_souple": "Very Soft",
+
+
+		"jamais":"Never",
+		"rarement": "Rarely",
+		"regulierement":"Regularly",
+		"souvent": "Often",
+
+		"newclio": "New CLIO",
+		"newcapture": "New CAPTUR"
 	}
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, Input } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import  *  as  data  from  '../../assets/cars.json'
 import * as poucentage from '../../assets/pourcentage.json';
@@ -30,7 +30,9 @@ export class Simulateur2Component implements OnInit {
 	versionEngines;
 	selectedCar;
 	selectedVersion;
-	selectedEngine;
+	selectedEngine = {
+		"consomation": "0",
+	};
 	selectedCarName;
 	selectedCarUrlmg;
 	seletedEngineName;
@@ -53,7 +55,11 @@ export class Simulateur2Component implements OnInit {
 	disablePoucentageStep = false;
 	engine;
 	closeResult: string;
-	
+
+	@Input('Langue') 
+	langue: string;
+
+
 	constructor(
 		private _formBuilder: FormBuilder, 
 		private modalService: NgbModal
@@ -88,6 +94,7 @@ export class Simulateur2Component implements OnInit {
 			bagageRequired: ['', Validators.required],
 			passagerRequired: ['', Validators.required]
 		});
+
 	} 		
 
 	/**
