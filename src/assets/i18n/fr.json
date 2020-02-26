@@ -68,6 +68,27 @@
 		"souvent": "Souvent",
 
 		"newclio": "Nouvelle CLIO",
-		"newcapture": "Nouveau CAPTUR"
+		"newcapture": "Nouveau CAPTUR",
+
+		"en_mouyenne_jeffectue" : "En moyenne j'effectue",
+		"par_an" : "Par an",
+
+		"en_general": "En général",
+		"il_sagit_de": "il s'agit de",
+		"adultes" : "adulte(s)",
+		"et": "et",
+		"enfants": "enfant(s)",
+
+		"consommation_estimee_au_quotidien": "Consommation estimée au quotidien",
+
+		"notre_offre_de_financement" : "Notre offre de financement",
+
+		"votre_budget_carburant": "Votre budget_carburant",
+
+		"environ": "Environ",
+
+		"votre_budget_recharge" : "Votre budget recharge",
+
+		"votre_bugdet_mensuel" : "Votre bugdet mensuel"
 	}
 }

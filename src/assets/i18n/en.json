@@ -69,6 +69,28 @@
 		"souvent": "Often",
 
 		"newclio": "New CLIO",
-		"newcapture": "New CAPTUR"
+		"newcapture": "New CAPTUR",
+
+		
+		"en_mouyenne_jeffectue" : "On average I perform",
+		"par_an" : "Per year",
+
+		"en_general": "In general",
+		"il_sagit_de": "these are",
+		"adultes" : "adult(s)",
+		"et": "and",
+		"enfants": "child(ren)",
+
+		"consommation_estimee_au_quotidien": "Estimated daily consumption",
+
+		"notre_offre_de_financement" : "Our financing offer",
+
+		"votre_budget_carburant": "Your fuel budget",
+
+		"environ": "About",
+
+		"votre_budget_recharge":"Your recharge budget",
+
+		"votre_bugdet_mensuel" : "Your monthly budget"
 	}
 }

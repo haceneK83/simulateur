@@ -28,33 +28,70 @@ export class Simulateur2Component implements OnInit {
 	frequenceOptions: any = (frequence as any).default;
 	carVersions;
 	versionEngines;
-	selectedCar;
-	selectedVersion;
-	selectedEngine = {
-		"consomation": "0",
+	selectedCar = {
+		name: "",
+		code:"",
+		imageURL:""
 	};
+	selectedVersion = {
+		name:"",
+		code:"",
+		imageURL:"",
+		imageURL_:""
+	};
+	selectedEngine = {
+		consomation: "0",
+		name: "",
+		alternatifs: [],
+		alternatifs_:[],
+		deal:"",
+		budjet_mensuel_carburant: "0",
+		budjet_mensuel_electricite: "0",
+		budjet_mensuel_financement :0,
+		budjet_mensuel_final:0
+	};
+
+	selectedEngineToCompare = {
+		consomation: "0",
+		name: "",
+		alternatifs: [],
+		deal:"",
+		budjet_mensuel_carburant: "0",
+		budjet_mensuel_electricite: "0",
+		budjet_mensuel_financement: 0,
+		budjet_mensuel_final:0
+	};
+
 	selectedCarName;
 	selectedCarUrlmg;
 	seletedEngineName;
 	selectedVerisionName;
+	selectedVersionToCompare = {
+		name:"",
+		code:"",
+		imageURL:"",
+		imageURL_:""
+	};
 	selectedPourcentageVille;
 	selectedPourcentageRoute;
 	selectedPourcentageAutoRoute;
 	selectedFrequenceEco;
 	selectedConduite;
 	selectedBagage;
-	selectedPassager;
+	selectedPassager = {  name:"", value:"" };
 	firstFormGroup: FormGroup;
 	secondFormGroup: FormGroup;
 	thirdFormGroup: FormGroup;
 	fourthFormGroup: FormGroup;
 	fifthFormGroup: FormGroup;
 	sixthFormGroup: FormGroup;
+	seventhFormGroup: FormGroup;
 	isOptional = false;
 	displayInfoCar = false;
 	disablePoucentageStep = false;
 	engine;
 	closeResult: string;
+	kmAnnuel: number;
 
 	@Input('Langue') 
 	langue: string;
@@ -95,6 +132,9 @@ export class Simulateur2Component implements OnInit {
 			passagerRequired: ['', Validators.required]
 		});
 
+		this.seventhFormGroup = this._formBuilder.group({
+			kmAnnuelRequired: ['', Validators.required]
+		});
 	} 		
 
 	/**
@@ -121,7 +161,7 @@ export class Simulateur2Component implements OnInit {
 	getEngines(){
 		this.carsOptions.forEach( car => {
 			if( car.code.trim() == this.selectedCar.code.trim() ){
-				car.versions.forEach( version =>{
+				car.versions.forEach( version => {
 					if( this.selectedVersion.code== version.code ){
 						this.versionEngines = version.engines;
 					}
@@ -155,22 +195,28 @@ export class Simulateur2Component implements OnInit {
 		}
 	}
 
-	open(content) {
-		this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
-		  this.closeResult = `Closed with: ${result}`;
-		}, (reason) => {
-		  this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-		});
-	  }
-	
-	  private getDismissReason(reason: any): string {
-		if (reason === ModalDismissReasons.ESC) {
-		  return 'by pressing ESC';
-		} else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-		  return 'by clicking on a backdrop';
-		} else {
-		  return  `with: ${reason}`;
+	/**
+	 * setter le moteur à comparer
+	 * @param engine 
+	 */
+	setEngineToCompare(engine){
+		this.selectedEngineToCompare = engine;
+		this.selectedVersionToCompare = this.selectedVersion;
+
+		console.log(engine)
+	}
+
+	/**
+	 * Charger les moteur alternatifs pour capture
+	 */
+	loadAlternatif(){
+
+		if( this.selectedCar.code == "capture" ){
+			if( this.kmAnnuel >= 20000 ){
+				this.selectedEngine.alternatifs =  this.selectedEngine.alternatifs_
+			}
 		}
-	  }
+	}
+
 }
 
