@@ -50,8 +50,8 @@
             {
                 "name": "Intens",
                 "code": "Intens",
-                "imageURL":  "assets/images/clio_intense_blanche.jpg",
-                "imageURL_":  "assets/images/clio_intense_brain_vision.jpg",
+                "imageURL":  "assets/images/clio_intense_blanc.png",
+                "imageURL_":  "assets/images/clio_intense_brain_vision.png",
                 "engines": [
                     {
                         "name": "TCe 100 X-Tronic",
@@ -177,8 +177,8 @@
             {
                 "name": "Intens",
                 "code": "Intens",
-                "imageURL":  "assets/images/capture_intesns_blanc.jpg",
-                "imageURL_":  "assets/images/capture_intesns_orange.jpg",
+                "imageURL":  "assets/images/capture_intense_blanc.png",
+                "imageURL_":  "assets/images/capture_intense_orange.png",
                 "engines": [
                     {
                         "name": "TCe 130 EDC",

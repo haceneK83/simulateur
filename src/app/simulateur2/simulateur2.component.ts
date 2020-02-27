@@ -187,6 +187,7 @@ export class Simulateur2Component implements OnInit {
 	 */
 	CalculePourCentage(){
 		if( this.selectedPourcentageVille != undefined && this.selectedPourcentageRoute != undefined && this.selectedPourcentageAutoRoute != undefined){
+			
 			if( Number(this.selectedPourcentageVille.value) + Number(this.selectedPourcentageRoute.value) + Number(this.selectedPourcentageAutoRoute.value) != 100 ){
 				this.disablePoucentageStep = true;
 			}else {
