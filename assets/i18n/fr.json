@@ -1,44 +1,44 @@
-{
+﻿{
 	"sm" :{
-		"titre": "Calculez vôtre consommation réelle",
+		"titre": "Votre consommation à l'usage",
 
 
 		"votre_vehicule" : "Votre véhicule",
 		"interesse_par" : "Je suis intéressé(e) par",
-		"equipe_dun_moteur": "équipé d'un moteur",
+		"equipe_dun_moteur": "équipé du moteur",
 
 
 		"vos_trajets_votre_conduite": "Vos trajets & votre conduite",
 		"Jeffectue_en_moyenne": "J'effectue en moyenne",
 		"km":"km",
-		"par_jour_que_je_parcours_en" : "par jour que je parcours en",
+		"par_jour_que_je_parcours_en" : "par jour, que je parcours en",
 		"trajets": "trajets",
 
 
 		"ces_trajets_representent" : "Ces trajets représentent",
-		"en_ville": "en ville",
+		"en_ville": "de ville",
 		"sur_route_et": "sur route et",
 		"sur_autoroute" :"sur autoroute",
-		"la_somme_des_pourcentage_doit_etre_egale_100" : "la somme des pourcentage doit être égale à 100",
+		"la_somme_des_pourcentage_doit_etre_egale_100" : "attention la somme des pourcentages doit être égale à 100",
 
 
-		"ma_conduite_est": "Ma conduite est",
+		"ma_conduite_est": "Mon style de conduite est plutôt",
 		"Je_utilise": "J'utilise",
-		"eco_mode":"l'Eco Mode",
+		"eco_mode":"le mode Eco",
 
 
 		"pour_finir":"Pour finir, ",
 		"je":"je",
 		"transport":"transporte",
-		"des_bagages_supérieurs_a_30_KG_et" :"des bagages supérieurs à 30 KG, et",
+		"des_bagages_supérieurs_a_30_KG_et" :"des bagages supérieurs à 30 kg, et",
 		"des_passagers":"des passagers",
 
 
 		"votre_consommation_a_bord_de": "Votre consommation à bord de",
-		"est_estime_a": "est estimé à",
-		"consommation_theorique": "Consommation théorique",
+		"est_estime_a": "est estimée à",
+		"consommation_theorique": "Consommation homologuée WLTP, cycle complet :",
 		"renault_vous_propose": "Renault vous propose",
-		"moteurs_alternatifs": "Moteurs alternatifs",
+		"moteurs_alternatifs": "Moteur(s) alternatif(s)",
 		"comparer_avec_ce_moteur": "COMPARER AVEC CE MOTEUR",
 		 
 		"votre_financement":"Votre financement",
@@ -53,25 +53,25 @@
 		"precedent":"Précédent",
 		"retour" :"Retour",
 		"mois" : "mois",
-		"choisir": "Poursuivre avec ce moteur",
+		"choisir": "Choisir ce moteur",
 		"valider": "Valider",
 
-		"tres_dynamique": "Très dynamique",
-		"dynamique":"Dynamique",
-		"intermediaire":"intermediaire",
+		"tres_dynamique": "très dynamique",
+		"dynamique":"dynamique",
+		"intermediaire":"intermédiaire",
 		"souple":"souple",
-		"tres_souple": "Très souple",
+		"tres_souple": "très souple",
 
-		"jamais":"Jamais",
-		"rarement": "Rarement",
-		"regulierement":"Régulièrement",
-		"souvent": "Souvent",
+		"jamais":"jamais",
+		"rarement": "rarement",
+		"regulierement":"régulièrement",
+		"souvent": "souvent",
 
 		"newclio": "Nouvelle CLIO",
 		"newcapture": "Nouveau CAPTUR",
 
 		"en_mouyenne_jeffectue" : "En moyenne j'effectue",
-		"par_an" : "Par an",
+		"par_an" : "par an",
 
 		"en_general": "En général",
 		"il_sagit_de": "il s'agit de",
@@ -79,11 +79,11 @@
 		"et": "et",
 		"enfants": "enfant(s)",
 
-		"consommation_estimee_au_quotidien": "Consommation estimée au quotidien",
+		"consommation_estimee_au_quotidien": "Ma consommation estimée",
 
 		"notre_offre_de_financement" : "Notre offre de financement",
 
-		"votre_budget_carburant": "Votre budget_carburant",
+		"votre_budget_carburant": "Votre budget carburant",
 
 		"environ": "Environ",
 
