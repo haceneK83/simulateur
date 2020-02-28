@@ -1,0 +1,233 @@
+[
+    {
+        "name" : "sm.newclio",
+        "code" : "clio",
+        "versions" : [
+            {
+                "name": "Life",
+                "code": "life",
+                "engines": [
+                    {
+                        "name": "TCe 100 X-Tronic",
+                        "code": "TCe 100 X-Tronic"
+                    },
+                    {
+                        "name": "TCe 100 BVM",
+                        "code": "TCe 100 BVM"
+                    },
+                    {
+                        "name": "Blue dCi 115",
+                        "code": "Blue dCi 115"
+                    },
+                    {
+                        "name": "TCe 130 EDC",
+                        "code": "TCe 130 EDC"
+                    }
+                ]
+            },
+            {
+                "name": "Zen",
+                "code": "zen",
+                "engines": [
+                    {
+                        "name": "TCe 100 X-Tronic",
+                        "code": "TCe 100 X-Tronic"
+                    },
+                    {
+                        "name": "TCe 100 BVM",
+                        "code": "TCe 100 BVM"
+                    },
+                    {
+                        "name": "Blue dCi 115",
+                        "code": "Blue dCi 115"
+                    },
+                    {
+                        "name": "TCe 130 EDC",
+                        "code": "TCe 130 EDC"
+                    }
+                ]
+            },
+            {
+                "name": "Intens",
+                "code": "Intens",
+                "imageURL":  "assets/images/clio_intense_blanc.png",
+                "imageURL_":  "assets/images/clio_intense_brain_vision.png",
+                "engines": [
+                    {
+                        "name": "TCe 100 X-Tronic",
+                        "code": "TCe 100 X-Tronic",
+                        "consomation": "6,9",
+                        "deal": "4 ans & 10 000 km/an",
+                        "prix_carburant": "1,45",
+                        "budjet_mensuel_financement": "204",
+                        "budjet_mensuel_carburant": "71",
+                        "budjet_mensuel_electricite": "0",
+                        "budjet_mensuel_final": "275",
+                        "alternatifs": [
+                            {   
+                                "name":"E-TECH Hybrid",
+                                "code":"E-TECH Hybrid",
+                                "consomation": "5,2",
+                                "prix_carburant": "1,45",
+                                "budjet_mensuel_financement": "221",
+                                "budjet_mensuel_carburant": "51",
+                                "budjet_mensuel_electricite": "0",
+                                "budjet_mensuel_final": "272"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "TCe 100 BVM",
+                        "code": "TCe 100 BVM",
+                        "consomation": "6,3",
+                        "deal": "4 ans & 15 000 km/an",
+                        "prix_carburant": "1,45",
+                        "budjet_mensuel_financement": "202",
+                        "budjet_mensuel_carburant": "93",
+                        "budjet_mensuel_electricite": "0",
+                        "budjet_mensuel_final": "295",
+                        "alternatifs": [
+                            {   
+                                "name":"TCe 100 GPL",
+                                "code":"TCe 100 GPL",
+                                "consomation": "6,51",
+                                "prix_carburant": "0,63",
+                                "budjet_mensuel_financement": "208",
+                                "budjet_mensuel_carburant": "72",
+                                "budjet_mensuel_electricite": "0",
+                                "budjet_mensuel_final": "280"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Blue dCi 115",
+                        "code": "Blue dCi 115",
+                        "consomation": "5",
+                        "deal": "4 ans & 30 000 km/an",
+                        "prix_carburant": "1,33",
+                        "budjet_mensuel_financement": "270",
+                        "budjet_mensuel_carburant": "137",
+                        "budjet_mensuel_electricite": "0",
+                        "budjet_mensuel_final": "407",
+                        "alternatifs": [
+                            {   
+                                "name":"E-TECH Hybrid",
+                                "code":"E-TECH Hybrid",
+                                "consomation": "5,2",
+                                "prix_carburant": "1,45",
+                                "budjet_mensuel_financement": "289",
+                                "budjet_mensuel_carburant": "154",
+                                "budjet_mensuel_electricite": "0",
+                                "budjet_mensuel_final": "443"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name" : "sm.newcapture",
+        "code" : "capture",
+        "versions" : [
+            {
+                "name": "Life",
+                "code": "life",
+                "engines": [
+                    {
+                        "name": "TCe 100 X-Tronic",
+                        "code": "TCe 100 X-Tronic"
+                    },
+                    {
+                        "name": "TCe 100 BVM",
+                        "code": "TCe 100 BVM"
+                    },
+                    {
+                        "name": "Blue dCi 115",
+                        "code": "Blue dCi 115"
+                    },
+                    {
+                        "name": "TCe 130 EDC",
+                        "code": "TCe 130 EDC"
+                    }
+                ]
+            },
+            {
+                "name": "Zen",
+                "code": "zen",
+                "engines": [
+                    {
+                        "name": "TCe 100 X-Tronic",
+                        "code": "TCe 100 X-Tronic"
+                    },
+                    {
+                        "name": "TCe 100 BVM",
+                        "code": "TCe 100 BVM"
+                    },
+                    {
+                        "name": "Blue dCi 115",
+                        "code": "Blue dCi 115"
+                    },
+                    {
+                        "name": "TCe 130 EDC",
+                        "code": "TCe 130 EDC"
+                    }
+                ]
+            },
+            {
+                "name": "Intens",
+                "code": "Intens",
+                "imageURL":  "assets/images/capture_intense_blanc.png",
+                "imageURL_":  "assets/images/capture_intense_orange.png",
+                "engines": [
+                    {
+                        "name": "TCe 130 EDC",
+                        "code": "TCe 130 EDC",
+                        "kilometrage" :"10000",
+                        "kilometrage_" :"20000",
+                        "consomation": "7,9",
+                        "deal": "4 ans & 10 000 km/an",
+                        "prix_carburant": "1,45",
+                        "budjet_mensuel_financement": "274",
+                        "budjet_mensuel_carburant": "75",
+                        "budjet_mensuel_electricite": "0",
+                        "budjet_mensuel_final": "349",
+                        "alternatifs": [
+                            {   
+                                "name":"Blue dCi 115 EDC",
+                                "code":"Blue dCi 115 EDC",
+                                "consomation": "5,4",
+                                "prix_carburant": "1,33",
+                                "budjet_mensuel_financement": "298",
+                                "budjet_mensuel_carburant": "51",
+                                "budjet_mensuel_electricite": "0",
+                                "budjet_mensuel_final": "349"
+                            }
+                        ],
+                        "alternatifs_": [
+                            {   
+                                "name":"E-TECH Plug-in Hybrid",
+                                "code":"E-TECH Plug-in Hybrid",
+                                "consomation": "3,7",
+                                "prix_carburant": "1,45",
+                                "prix_kwh": "0,21",
+                                "budjet_mensuel_financement": "403",
+                                "budjet_mensuel_carburant": "20",
+                                "budjet_mensuel_electricite": "36",
+                                "budjet_mensuel_final": "459"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "TCe 100 BVM",
+                        "code": "TCe 100 BVM"
+                    },
+                    {
+                        "name": "Blue dCi 115",
+                        "code": "Blue dCi 115"
+                    }
+                ]
+            }
+        ]
+    }
+]
