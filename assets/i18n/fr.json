@@ -89,6 +89,14 @@
 
 		"votre_budget_recharge" : "Votre budget recharge",
 
-		"votre_bugdet_mensuel" : "Votre bugdet mensuel"
+		"votre_bugdet_mensuel" : "Votre bugdet mensuel",
+
+		"ans": "ans",
+		"an": "an",
+
+		"dealClio1": "4 ans & 10 000 km/an",
+		"dealClio2": "4 ans & 15 000 km/an",
+		"dealClio3": "4 ans & 30 000 km/an",
+		"dealCapture": "4 ans & 10 000 km/an"
 	}
 }
