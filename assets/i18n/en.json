@@ -1,43 +1,43 @@
-{
+﻿{
 	"sm" :{
-		"titre": "Calculate your actual consumption",
+		"titre": "My fuel consumption by usage",
 
 		"votre_vehicule" : "Your vehicle",
 		"interesse_par" : "I am interested in",
-		"equipe_dun_moteur": "fitted with an engine",
+		"equipe_dun_moteur": "with the engine",
 
 
-		"vos_trajets_votre_conduite":"Your journeys & your driving",
-		"Jeffectue_en_moyenne": "I perform on average",
+		"vos_trajets_votre_conduite":"Travels & driving style",
+		"Jeffectue_en_moyenne": "I usually drive",
 		"km":"km",
-		"par_jour_que_je_parcours_en" : "per day that I travel in",
+		"par_jour_que_je_parcours_en" : "per day and it takes me",
 		"trajets": "trips",
 
 
-		"ces_trajets_representent" : "These journeys represent",
-		"en_ville": "in the city",
-		"sur_route_et": "on the road and",
-		"sur_autoroute" :"on the road and",
+		"ces_trajets_representent" : "These travels represent",
+		"en_ville": "in town",
+		"sur_route_et": "on country roads and",
+		"sur_autoroute" :"on highways",
 		"la_somme_des_pourcentage_doit_etre_egale_100":"the sum of the percentages must be equal to 100",
 
 
-		"ma_conduite_est": "Ma driving is",
+		"ma_conduite_est": "Ma driving style is",
 		"Je_utilise": "I use",
-		"eco_mode":"The Eco Mode",
+		"eco_mode":"the Eco Mode",
 
 
 		"pour_finir":"Finally, ",
 		"je":"I",
 		"transport":"carry",
-		"des_bagages_supérieurs_a_30_KG_et" :"baggage over 30 kg, and",
+		"des_bagages_supérieurs_a_30_KG_et" :"luggages over 30 kg, and",
 		"des_passagers":"passengers",
 
 		
 		"votre_consommation_a_bord_de": "Your consumption on board",
 		"est_estime_a": "is estimated at",
-		"consommation_theorique": "Theoretical consumption",
-		"renault_vous_propose": "Renault offers you",
-		"moteurs_alternatifs": "Alternative engines",
+		"consommation_theorique": "Homologated consumption - WLTP combined cycle:",
+		"renault_vous_propose": "Renault invite you to discover",
+		"moteurs_alternatifs": "alternative engine(s)",
 		"comparer_avec_ce_moteur": "COMPARE WITH THIS ENGINE",
 
 
@@ -52,28 +52,28 @@
 		"precedent":"Previous",
 		"retour" :"Back",
 		"mois" : "Month",
-		"choisir": "Continue with this engine",
+		"Choisir": "Choose",
 		"valider": "Validate",
 
 
-		"tres_dynamique": "Very dynamic",
+		"tres_dynamique": "very dynamic",
 		"dynamique":"Dynamic",
-		"intermediaire":"Intermediate",
-		"souple":"Soft",
-		"tres_souple": "Very Soft",
+		"intermediaire":"Medium",
+		"souple":"smooth",
+		"tres_souple": "very smooth",
 
 
-		"jamais":"Never",
-		"rarement": "Rarely",
-		"regulierement":"Regularly",
-		"souvent": "Often",
+		"jamais":"never",
+		"rarement": "rarely",
+		"regulierement":"regularly",
+		"souvent": "often",
 
 		"newclio": "New CLIO",
 		"newcapture": "New CAPTUR",
 
 		
 		"en_mouyenne_jeffectue" : "On average I perform",
-		"par_an" : "Per year",
+		"par_an" : "per year",
 
 		"en_general": "In general",
 		"il_sagit_de": "these are",
