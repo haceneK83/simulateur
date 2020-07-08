@@ -105,8 +105,6 @@ THE SOFTWARE.
 
 @angular/material/progress-bar
 
-@angular/material/radio
-
 @angular/material/select
 
 @angular/material/stepper

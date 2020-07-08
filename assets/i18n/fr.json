@@ -36,7 +36,7 @@
 
 		"votre_consommation_a_bord_de": "Votre consommation à bord de",
 		"est_estime_a": "est estimée à",
-		"consommation_theorique": "Consommation homologuée WLTP, cycle complet :",
+		"consommation_theorique": "Consommation WLTP* :",
 		"renault_vous_propose": "Renault vous propose",
 		"moteurs_alternatifs": "Moteur(s) alternatif(s)",
 		"comparer_avec_ce_moteur": "COMPARER AVEC CE MOTEUR",
@@ -97,6 +97,22 @@
 		"dealClio1": "4 ans & 10 000 km/an",
 		"dealClio2": "4 ans & 15 000 km/an",
 		"dealClio3": "4 ans & 30 000 km/an",
-		"dealCapture": "4 ans & 10 000 km/an"
+        "dealCapture": "4 ans & 10 000 km/an",
+        
+        "twingo" : "TWINGO",
+        "twingoZe": "TWINGO Z.E.", 
+        "bonus_ecologique": "Bonus écologique non déduit, prix en achat intégral(batterie incluse)",
+
+        "prix_catalogue" : "Prix catalogue conseillé TVAc",
+        "continuer_avec_ce_moteur": "Continuer avec ce moteur",
+        "votre_selection": "Vôtre séléction",
+        "votre_budget_monsuel_moyen" : "VOTRE BUGDET MENSUEL MOYEN",
+        "mentions_legales": "Les mensualités arrondies le sont à l'euro supérieur.  un crédit vous engage est doit être remboursé. Vérifier vos capacité de remboursement avant de vous engagez.",
+        "en_lld_sur": "En LLD sur ",
+        "kilometrage_maximum_de": "kilométrage maximum de",
+        "premier_loyer_majore_de": "Premier loyer majoré de",
+        "puis_des_loyers_de": "puis des loyers de",
+        "configurer": "CONFIGURER",
+        "et_si_vous_passiez_a_lelectrique": "Et si vous passiez à l'électrique"
 	}
 }

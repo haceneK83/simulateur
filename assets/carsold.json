@@ -1,0 +1,44 @@
+[
+    {
+        "name" : "sm.twingo",
+        "code" : "clio",
+        "versions" : [
+            {
+                "name": "Intens",
+                "code": "Intens",
+                "imageURL":  "assets/images/twingo_intens_bleue_34AV.png",
+                "imageURL_":  "assets/images/twingo_ZE_intens_blancquartz_34AV.png",
+                "engines": [
+                    {
+                        "name": "Sce 75",
+                        "code": "Sce 75",
+                        "version" : "Intens",
+                        "consomation": "6,51",
+                        "deal": "sm.dealClio1",
+                        "prix_carburant": "1,323",
+                        "budjet_mensuel_financement": "142",
+                        "budjet_mensuel_carburant": "78",
+                        "budjet_mensuel_electricite": "0",
+                        "budjet_mensuel_final": "220",
+                        "prix_total" :"15700",
+                        "alternatifs": [
+                            {   
+                                "newVersion" : "sm.twingoZe",
+                                "name":"R82",
+                                "code":"R82",
+                                "consomation": "0",
+                                "prix_carburant": "0",
+                                "prix_electricite": "0.177",
+                                "budjet_mensuel_financement": "166",
+                                "budjet_mensuel_carburant": "0",
+                                "budjet_mensuel_electricite": "24",
+                                "budjet_mensuel_final": "190",
+                                "prix_total" :"25400"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
